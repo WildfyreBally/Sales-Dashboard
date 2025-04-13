@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sales Projection Dashboard</h1>
+
+        <!-- Sales Input Form -->
+        <div class="inputs">
+            <label for="target">Enter Sales Target: </label>
+            <input type="number" id="target" value="16750">
+        </div>
+        <div class="inputs">
+            <label for="current_sales">Current Sales: </label>
+            <input type="number" id="current_sales" value="5000">
+        </div>
+        <div class="inputs">
+            <label for="current_day">Current Day: </label>
+            <input type="number" id="current_day" value="11">
+        </div>
+        <div class="inputs">
+            <label for="total_days">Total Days: </label>
+            <input type="number" id="total_days" value="30">
+        </div>
+
+        <div id="results">
+            <h3>Results:</h3>
+            <ul id="result-list">
+                <!-- Results will be populated dynamically -->
+            </ul>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="salesChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
